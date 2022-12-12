@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Türkçe Notunuzu Giriniz : ");
+        byte turkce = input.nextByte();
+        System.out.print("Matematik Notunuzu Giriniz : ");
+        byte matematik = input.nextByte();
+        System.out.print("Fen Notunuzu Giriniz : ");
+        byte fen = input.nextByte();
+        System.out.print("Kimya Notunuzu Giriniz : ");
+        byte kimya = input.nextByte();
+        System.out.print("Müzik Notunuzu Giriniz : ");
+        byte muzik = input.nextByte();
+        double avg = (turkce+matematik+muzik+kimya+fen)/5;
+        if(avg<=55){
+            System.out.println("Sinifi Gecemediniz !");
+            System.out.println("Ortalamaniz:"+avg);
+        }
+        else{
+            System.out.println("Sinifi Basariyla Gectiniz !");
+            System.out.println("Ortalamaniz:"+avg);
+        }
+
+
+    }
+}
